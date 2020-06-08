@@ -134,19 +134,19 @@
 <script> 
 myContractInstance.methods.users(account).call().then(function (result1) {
         
-    $('.currentuseridlink').html("https://forceex.github.io/signup/?referralid=" + result1.id);
+    $('.currentuseridlink').html("https://forceex.live/signup/?referralid=" + result1.id);
 
-    $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://forceex.github.io/signup/?referralid=" + result1.id);
-
-
-
-    $('.currentuseridlink').val("https://forceex.github.io/signup/?referralid=" + result1.id);
-
-    $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://forceex.github.io/signup/?referralid=" + result1.id);
+    $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://forceex.live/signup/?referralid=" + result1.id);
 
 
 
-    $('.sharebutton').attr('data-url', "https://forceex.github.io/signup/?referralid=" + result1.id);
+    $('.currentuseridlink').val("https://forceex.live/signup/?referralid=" + result1.id);
+
+    $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://forceex.live/signup/?referralid=" + result1.id);
+
+
+
+    $('.sharebutton').attr('data-url', "https://forceex.live/signup/?referralid=" + result1.id);
     $('.currentuserid').html(result1.id);
     $('.currentaddress').html(account);
     $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
